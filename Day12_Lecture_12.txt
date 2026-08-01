@@ -1,0 +1,27 @@
+------JPA(Hibernate)-ORM  Frameowork------
+   1) OneToOne   Mapping       :   2 tables
+        Customer & Address
+   2) ManyToOne  Mapping       :   2 tables
+        Loan & Customer
+============================= 
+   Association : Collection(List/Set).  
+   3) OneToMany  Mapping       :   2 tables
+   
+	  Customer   :   Card
+   
+   4) ManyToMany Mapping       :   3 tables.
+       Customer ---- Service
+	   
+ CustomerDTO{customerId=1001, 
+			emailId='steven@infy.com', 
+			name='Steven Martin', 
+			dateOfBirth=2006-02-11, 
+			cards=[CardDTO{cardId=12346, 
+						   cardNumber='6642160005012193', 
+						   expiryDate=2035-11-22}, 
+				   CardDTO{cardId=12347, 
+						   cardNumber='6642160005012194', 
+						   expiryDate=2039-01-25}, 
+				   CardDTO{cardId=12348, 
+							cardNumber='6642160005012195', 
+							expiryDate=2029-10-04}]}
